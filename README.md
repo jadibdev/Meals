@@ -1,1 +1,1 @@
-# Meals
+# webpack-boilerplate
