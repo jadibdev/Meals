@@ -1,7 +1,7 @@
 # MEALS KING APP
 A JavaScript Project Meals King App: A web app that display meals categories, category list items, meal items popup model showing details and comment form. The app allows users to like and comment on a favorite meal.
 Meals data is fetched from MealDB API
-Likes and comment is store in Involvement API provided by Microverse.
+Likes and comment are stored in the Involvement API provided by Microverse.
 
 ## Built With
 Webpack
@@ -27,15 +27,18 @@ To get a local copy up and running follow these simple example steps.
 - Run npm start to open the project in localhost
 
 ## Authors
-👤 Husseini Mudi
-GitHub: @githubhandle
-Twitter: @twitterhandle
-LinkedIn: LinkedIn
+👤 **Husseini Mudi**
 
-👤 Mohamed Jadib
-GitHub: @jadibdev
-Twitter: @MohamedJadib
-LinkedIn: LinkedIn
+- GitHub: [@githubhandle](https://github.com/Profsain)
+- Twitter: [@twitterhandle](https://twitter.com/profsain)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/profsain)
+
+
+👤 **Mohamed Jadib**
+
+- GitHub: [@githubhandle](https://github.com/jadibdev)
+- Twitter: [@twitterhandle](https://twitter.com/MohamedJadib)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohamed-jadib-942a5041/)
 
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
