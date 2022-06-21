@@ -1,5 +1,12 @@
 body {
-  background: lightgrey;
+  background: #ff4020;
+  font-family: 'Germania One', cursive;
+}
+
+#logo {
+  width: 150px;
+  height: 100px;
+  margin-top: 15px;
 }
 
 .footer {
@@ -7,8 +14,8 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  background: #222;
-  color: white;
+  background: #000000;
+  color: #ff4020;
   text-align: center;
   height: 50px;
   padding-top: 25px;
