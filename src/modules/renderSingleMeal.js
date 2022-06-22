@@ -4,14 +4,13 @@ const renderSingleMeal = (mealObj) => {
   const mealArea = document.querySelector('#meal-area');
   const mealImage = document.querySelector('#commentImg');
   const mealVideo = document.querySelector('#meals-video');
-  const vidUrl = mealObj.strYoutube.replace(/watch\?v\=/g, 'embed/');
+  const vidUrl = mealObj.strYoutube.replace(/watch\?v=/g, 'embed/');
 
   mealName.innerHTML = `Name: ${mealObj.strMeal}`;
   mealCat.innerHTML = `Category: ${mealObj.strCategory}`;
   mealArea.innerHTML = `Area: ${mealObj.strArea}`;
   mealImage.setAttribute('src', mealObj.strMealThumb);
   mealVideo.setAttribute('src', vidUrl);
-
-}
+};
 
 export default renderSingleMeal;
