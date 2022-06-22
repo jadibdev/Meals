@@ -29,11 +29,13 @@ body {
   font-weight: 800;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .nav-item:hover {
   background-color: #ff4020;
   color: #000;
+  transform: scale(1.1);
 }
 
 .active {

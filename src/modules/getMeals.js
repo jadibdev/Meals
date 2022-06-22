@@ -4,6 +4,7 @@ const content = document.getElementById('content');
 const ul = document.createElement('ul');
 
 ul.classList.add('meals-list');
+ul.id = 'classlist';
 content.appendChild(ul);
 
 async function postLike(meal) {
@@ -73,9 +74,11 @@ const getMeals = async (category) => {
         console.log('data from server: ', data);
       });
 
-      getLikes(item).then((result) => {
-      document.getElementById(`p${item.id}`).innerText = result;
-    });
+      getLikes(item.id).then((result) => {
+        console.log('argument passed to getLikes()', item.id);
+        console.log('promise result', result);
+        document.getElementById(`p${item.id}`).innerText = parseInt(result) + 1;
+      });
     });
   });
 };
