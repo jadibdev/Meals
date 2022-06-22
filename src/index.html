@@ -23,8 +23,8 @@
           class="brand-logo"
         />
         <nav class="nav">
-          <ul class="nav-menu">
-            <li class="nav-item" id="breakfast">Breakfast</li>
+          <ul id="navLink" class="nav-menu">
+            <li class="nav-item active" id="breakfast">Breakfast</li>
             <li class="nav-item" id="seafood">Seafood</li>
             <li class="nav-item" id="pasta">Pasta</li>
             <li class="nav-item" id="dessert">Dessert</li>
@@ -35,6 +35,43 @@
       <main class="main">
         <div id="content"></div>
       </main>
+    </div>
+
+    <!-- comment pop-up model -->
+    <div class="comment-model">
+      <div class="comment-section">
+    
+        <p><i class='close fa fa-close'></i></p>
+        <div class="vidImg">
+          <img id="commentImg" src="https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg" alt="meal item" />
+          <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
+        </div>
+        <div class="meanu-details">
+          <h3>Name: Chicken Toast</h3>
+          <h3>Category: Chicken</h3>
+          <h3>Area: Japan</h3>
+        </div>
+        <div class="comment-box">
+          <div class="comment-details">
+            <h3 class="section-title">Comment (2)</h3>
+            <ul class="comment-list">
+              <li>I love this chicken toast</li>
+              <li>Test nice</li>
+              <li>So yummy yummy</li>
+              <li>This is great meal for family</li>
+            </ul>
+          </div>
+          <div class="add-comment">
+            <h2 class="section-title">Add Comment</h2>
+            <form action="#" class="form">
+              <input type="text" name="name" id="name" placeholder="Your name">
+              <textarea name="comment" id="comment" cols="40" rows="10" placeholder="Your insights"></textarea>
+              <button class="commentBtn" type="submit" id="submit">Comment</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

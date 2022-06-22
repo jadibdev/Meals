@@ -105,3 +105,69 @@ body {
   height: 50px;
   padding-top: 25px;
 }
+
+/* comment popup model style */
+.comment-model {
+  display: none;
+}
+
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ff4020;
+  margin: 38px;
+  padding: 24px;
+}
+
+.close {
+  font-size: 34px;
+  color: #ff4020;
+}
+
+.close:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+#commentImg {
+  margin-right: 28px;
+  height: 320px;
+  width: auto;
+}
+
+.meanu-details {
+  border-bottom: solid 2px #ff4020;
+  width: 800px;
+}
+
+.comment-list>li {
+  margin-bottom: 12px;
+}
+
+.comment-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.add-comment {
+  margin-left: 98px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: rebeccapurple;
+}
+
+input,
+textarea {
+  width: 330px;
+  padding: 8px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  border: 2px solid #ff4020;
+}

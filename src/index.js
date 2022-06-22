@@ -1,6 +1,17 @@
 import './style.css';
 import renderFooter from './modules/footer.js';
 import getMeals from './modules/getMeals.js';
+import addActiveClass from './modules/addActiveClass.js';
+
+getMeals('Breakfast');
+
+const navMenu = document.querySelector('.nav-menu');
+
+navMenu.addEventListener('click', (event) => {
+  const category = event.target.innerHTML;
+  addActiveClass(event.target);
+  getMeals(category);
+});
 
 document.getElementById('breakfast').addEventListener('click', () => {
   document.getElementById('classlist').innerHTML = '';
