@@ -41,6 +41,7 @@ body {
 .nav-item:hover {
   background-color: #ff4020;
   color: #000;
+  cursor: pointer;
 }
 
 .active {
@@ -73,16 +74,23 @@ body {
   margin-top: 100px;
 }
 
-.meals-list li {
-  border: 1px solid rgba(0, 0, 0, 0.8);
+.meals-item {
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
   padding: 20px;
   font-size: 30px;
   text-align: center;
 }
 
+.meal-name {
+  width: 200px;
+}
+
 .meal-images {
   width: 200px;
   height: 200px;
+  border: none;
+  border-radius: 4px;
 }
 
 .commentBtn {
