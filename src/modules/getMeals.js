@@ -51,7 +51,7 @@ const getMeals = async (category) => {
     const mealTemplate = `
     <li>   
       <img class="meal-images" src=${data.meals[i].strMealThumb} alt="meal pic" />
-      <article class="title-and-icons">
+      <div class="title-and-icons">
         <h5>${data.meals[i].strMeal}</h5>
         <div id="like-container">
           <i id='${data.meals[i].strMeal}' class='fa fa-heart'></i>

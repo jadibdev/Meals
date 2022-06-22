@@ -46,7 +46,8 @@ body {
 .title-and-icons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
 }
 
 .fa-heart {
@@ -92,6 +93,11 @@ body {
   font-weight: 800;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.commentBtn:hover {
+  transform: scale(1.1);
 }
 
 .footer {
