@@ -4,6 +4,6 @@ const closeCommentPopup = () => {
 
   mainContainer.style.display = 'block';
   commentContainer.style.display = 'none';
-}
+};
 
 export default closeCommentPopup;

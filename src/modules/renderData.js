@@ -1,5 +1,5 @@
 const renderMealsItem = (mealArr) => {
-  const mealsList = document.querySelector('#content')
+  const mealsList = document.querySelector('#content');
   const mealsContent = document.createElement('div');
   mealsContent.classList.add('meals-list');
 
@@ -18,10 +18,10 @@ const renderMealsItem = (mealArr) => {
       </div>
       <button class="commentBtn" id=${data.idMeal}>Comments</button>`;
 
-      mealsContent.append(item);
+    mealsContent.append(item);
   });
 
-  mealsList.replaceChildren(mealsContent)
-}
+  mealsList.replaceChildren(mealsContent);
+};
 
 export default renderMealsItem;

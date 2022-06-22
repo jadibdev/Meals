@@ -1,4 +1,4 @@
-import renderMealsItem from "./renderData.js";
+import renderMealsItem from './renderData.js';
 
 const fetchData = async (category) => {
   const url = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`;
@@ -12,7 +12,7 @@ const fetchData = async (category) => {
     return error;
   }
   renderMealsItem(mealsArr);
-
-}
+  return mealsArr;
+};
 
 export default fetchData;

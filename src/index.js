@@ -30,4 +30,3 @@ mealsList.addEventListener('click', (event) => {
 closeCommentModel.addEventListener('click', () => {
   closeCommentPopup();
 });
-

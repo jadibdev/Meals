@@ -4,6 +4,6 @@ const addActiveClass = (menuLink) => {
     activeMenu.classList.remove('active');
   }
   menuLink.classList.add('active');
-}
+};
 
 export default addActiveClass;
