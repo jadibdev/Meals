@@ -9,6 +9,42 @@ body {
   margin-top: 15px;
 }
 
+.title-and-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-heart {
+  color: white;
+  font-size: 18px;
+}
+
+.title-and-icons p {
+  margin: 0;
+}
+
+.meals-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  list-style-type: none;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.meals-list li {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.meal-images {
+  width: 200px;
+  height: 200px;
+}
+
 .footer {
   position: fixed;
   left: 0;
