@@ -12,7 +12,7 @@ const fetchSingleMeal = async (id) => {
   } catch (error) {
     return error;
   }
-  return mealObj; 
-}
+  return mealObj;
+};
 
 export default fetchSingleMeal;
