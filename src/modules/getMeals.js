@@ -29,8 +29,8 @@ const getMeals = async () => {
           <i id=${data.meals[0].strMeal} class='fa fa-heart'></i>
           <p>4</p>
         </div>
-      </article>
-      <button>Comments</button>
+      </div>
+      <button class="commentBtn">Comments</button>
     </li>`;
     ul.insertAdjacentHTML('beforeend', mealTemplate);
   }
