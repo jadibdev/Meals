@@ -18,6 +18,11 @@ body {
 .fa-heart {
   color: white;
   font-size: 18px;
+  cursor: pointer;
+}
+
+.fa-heart:hover {
+  transform: scale(1.5);
 }
 
 .title-and-icons p {
