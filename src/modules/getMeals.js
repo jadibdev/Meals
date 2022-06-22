@@ -1,3 +1,5 @@
+/* eslint-disable radix */
+/* eslint-disable consistent-return */
 /* eslint-disable no-await-in-loop */
 const InvolvementApiKey = 'H1778Eipl0PRUFSJ8DNo';
 const content = document.getElementById('content');
@@ -69,14 +71,11 @@ const getMeals = async (category) => {
   // event listener to post a like
   document.querySelectorAll('.fa-heart').forEach((item) => {
     item.addEventListener('click', () => {
-      console.log(item.id);
       postLike(item.id).then((data) => {
         console.log('data from server: ', data);
       });
 
       getLikes(item.id).then((result) => {
-        console.log('argument passed to getLikes()', item.id);
-        console.log('promise result', result);
         document.getElementById(`p${item.id}`).innerText = parseInt(result) + 1;
       });
     });
