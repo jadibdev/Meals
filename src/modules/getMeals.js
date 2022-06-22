@@ -27,7 +27,7 @@ const getMeals = async () => {
           <p>4</p>
         </div>
       </div>
-      <button>Comments</button>
+      <button class="commentBtn">Comments</button>
     </li>`;
     ul.insertAdjacentHTML('beforeend', mealTemplate);
   }
