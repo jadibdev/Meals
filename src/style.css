@@ -102,6 +102,10 @@ body {
   border-radius: 8px;
 }
 
+.commentBtn:hover {
+  color: #fff;
+  cursor: pointer;
+}
 .footer {
   position: fixed;
   left: 0;
@@ -132,6 +136,11 @@ body {
 .close {
   font-size: 34px;
   color: #ff4020;
+}
+
+.close:hover {
+  cursor: pointer;
+  color: #000;
 }
 
 #commentImg {
