@@ -4,6 +4,7 @@ import renderFooter from './modules/footer.js';
 import addActiveClass from './modules/addActiveClass.js';
 import openCommentModel from './modules/showCommentModel.js';
 import closeCommentPopup from './modules/closeCommentModel.js';
+import fetchSingleMeal from './modules/fetchSingleMeal.js';
 
 const navMenu = document.querySelector('.nav-menu');
 const mealsList = document.querySelector('#content');
@@ -21,7 +22,9 @@ renderFooter();
 
 // handle show comment pop-up model
 mealsList.addEventListener('click', (event) => {
+  const id = parseInt(event.target.id, 10);
   if (event.target.className === 'commentBtn') {
+    fetchSingleMeal(id);
     openCommentModel();
   }
 });
