@@ -3,6 +3,12 @@ const addNewComment = () => {
   const form = document.querySelector('.form');
   const userName = form.elements.name;
   const userComment = form.elements.comment;
+  const currentCommentList = document.querySelector('.commentList');
+  const commentCount = document.querySelector('#comment-counter');
+  const li = document.createElement('li');
+  li.innerHTML = userComment.value;
+  currentCommentList.appendChild(li);
+  commentCount.innerHTML = currentCommentList.childElementCount;
 
   const InvolvementApiKey = 'H1778Eipl0PRUFSJ8DNo';
   const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${InvolvementApiKey}/comments`;

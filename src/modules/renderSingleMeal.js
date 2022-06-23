@@ -12,7 +12,7 @@ const renderSingleMeal = (mealObj) => {
   mealArea.innerHTML = `Area: ${mealObj.strArea}`;
   mealImage.setAttribute('src', mealObj.strMealThumb);
   mealVideo.setAttribute('src', vidUrl);
-  mealItem.setAttribute('id', mealObj.idMeal)
+  mealItem.setAttribute('id', mealObj.idMeal);
 };
 
 export default renderSingleMeal;
