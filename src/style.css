@@ -37,12 +37,14 @@ body {
   font-weight: 800;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .nav-item:hover {
   background-color: #ff4020;
   color: #000;
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .active {
@@ -53,12 +55,18 @@ body {
 .title-and-icons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
 }
 
 .fa-heart {
   color: #ff4020;
   font-size: 18px;
+  cursor: pointer;
+}
+
+.fa-heart:hover {
+  transform: scale(1.5);
 }
 
 .title-and-icons p {
@@ -101,6 +109,11 @@ body {
   font-weight: 800;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.commentBtn:hover {
+  transform: scale(1.1);
 }
 
 .commentBtn:hover {

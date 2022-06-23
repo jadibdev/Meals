@@ -7,6 +7,7 @@ const fetchComments = async (id) => {
 
   const response = await fetch(url);
   const commentData = await response.json();
+  console.log(commentData)
   renderComment(commentData);
   updateCommentCounter(commentData);
 }
