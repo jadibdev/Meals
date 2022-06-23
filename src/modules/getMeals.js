@@ -46,20 +46,27 @@ async function getLikes(itemId) {
   // return data;
 }
 
-const calculateItemCounter = () => {
+/* const calculateItemCounter = () => {
   const itemCounter = Math.floor(Math.random() * 25);
   return itemCounter;
-};
+}; */
+
+const calculateCounter = (id, length) => {
+  document.getElementById(`${id}`).innerText = `${id} (${length})`;
+}
 
 const getMeals = async (category) => {
-  for (let i = 0; i < 6; i += 1) {
     const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`);
     const data = await response.json();
+    for (let i = 0; i < data.meals.length; i += 1) {
+    // document.getElementById(`${category}`).innerText = `${category} (${data.meals.length})`;
+    calculateCounter(category, data.meals.length);
+    console.log(data);
     const mealTemplate = `
     <li>   
       <img class="meal-images" src=${data.meals[i].strMealThumb} alt="meal pic" />
       <div class="title-and-icons">
-        <h5>${data.meals[i].strMeal}: (${calculateItemCounter()})</h5>
+        <h5>${data.meals[i].strMeal}: (${i})</h5>
         <div id="like-container">
           <i id='${data.meals[i].strMeal}' class='fa fa-heart'></i>
           <p id='p${data.meals[i].strMeal}' class="counter"></p>

@@ -1,34 +1,24 @@
-const calculateItemCounter = () => {
-  const itemCounter = Math.floor(Math.random() * 25);
-  return itemCounter;
-};
-
 test('item counter is calculated successfully', () => {
   /*
     Arrange
   */
+  const arr = [1, 2, 3];
 
-  let counter = 0;
-  // eslint-disable-next-line no-unused-vars
-  const mealTemplate = `
-    <li>   
-      <div class="title-and-icons">
-        <h5 id="meal-title">Fettucine alfredo</h5>
-        <div id="like-container">
-          <i class='fa fa-heart'></i>
-          <p class="counter">${counter}</p>
-        </div>
-      </div>
-      <button class="commentBtn">Comments</button>
-    </li>`;
+  const div = document.createElement('div');
+  div.id = 'par';
+
+  const calculateCounter = (id, length) => {
+    document.getElementById(`${id}`).innerHTML = `<p>${id} (${length})</p>`;
+  };
 
   /*
     Act
   */
-  counter = calculateItemCounter();
+  document.body.appendChild(div);
+  calculateCounter('par', arr.length);
 
   /*
     Assert
   */
-  expect(counter).toBeGreaterThan(0);
+  expect(div.innerHTML).toBe(`<p>${div.id} (${arr.length})</p>`);
 });

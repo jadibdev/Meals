@@ -4,6 +4,7 @@ import getMeals from './modules/getMeals.js';
 import addActiveClass from './modules/addActiveClass.js';
 import openCommentModel from './modules/showCommentModel.js';
 import closeCommentPopup from './modules/closeCommentModel.js';
+import getPopupMedia from './modules/getPopupMedia.js';
 
 getMeals('Breakfast');
 
@@ -17,27 +18,27 @@ navMenu.addEventListener('click', (event) => {
   // getMeals(category);
 });
 
-document.getElementById('breakfast').addEventListener('click', () => {
+document.getElementById('Breakfast').addEventListener('click', () => {
   document.getElementById('classlist').innerHTML = '';
   getMeals('Breakfast');
 });
 
-document.getElementById('seafood').addEventListener('click', () => {
+document.getElementById('Seafood').addEventListener('click', () => {
   document.getElementById('classlist').innerHTML = '';
   getMeals('Seafood');
 });
 
-document.getElementById('pasta').addEventListener('click', () => {
+document.getElementById('Pasta').addEventListener('click', () => {
   document.getElementById('classlist').innerHTML = '';
   getMeals('Pasta');
 });
 
-document.getElementById('dessert').addEventListener('click', () => {
+document.getElementById('Dessert').addEventListener('click', () => {
   document.getElementById('classlist').innerHTML = '';
   getMeals('Dessert');
 });
 
-document.getElementById('chicken').addEventListener('click', () => {
+document.getElementById('Chicken').addEventListener('click', () => {
   document.getElementById('classlist').innerHTML = '';
   getMeals('Chicken');
 });
@@ -47,6 +48,8 @@ renderFooter();
 // handle show comment pop-up model
 mealsList.addEventListener('click', (event) => {
   if (event.target.className === 'commentBtn') {
+    console.log(event.target.id);
+    getPopupMedia(event.target.id);
     openCommentModel();
   }
 });
