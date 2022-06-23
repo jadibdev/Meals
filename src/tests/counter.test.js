@@ -1,6 +1,4 @@
-const updateCommentCounter = (commentArr) => {
-  return !commentArr.length ? 0 : commentArr.length;
-};
+const updateCommentCounter = (commentArr) => !commentArr.length ? 0 : commentArr.length;
 
 const counterArr = ['Nice meal', 'Very deligious'];
 

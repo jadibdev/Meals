@@ -6,7 +6,6 @@ import getMeals from './modules/getMeals.js';
 import addActiveClass from './modules/addActiveClass.js';
 import openCommentModel from './modules/showCommentModel.js';
 import closeCommentPopup from './modules/closeCommentModel.js';
-import fetchSingleMeal from './modules/fetchSingleMeal.js';
 
 getMeals('Breakfast');
 
