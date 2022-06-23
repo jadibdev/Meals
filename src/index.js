@@ -5,10 +5,12 @@ import addActiveClass from './modules/addActiveClass.js';
 import openCommentModel from './modules/showCommentModel.js';
 import closeCommentPopup from './modules/closeCommentModel.js';
 import fetchSingleMeal from './modules/fetchSingleMeal.js';
+import addNewComment from './addNewcomment.js';
 
 const navMenu = document.querySelector('.nav-menu');
 const mealsList = document.querySelector('#content');
 const closeCommentModel = document.querySelector('.close');
+const form = document.querySelector('.form');
 
 navMenu.addEventListener('click', (event) => {
   const category = event.target.innerHTML;
@@ -33,3 +35,11 @@ mealsList.addEventListener('click', (event) => {
 closeCommentModel.addEventListener('click', () => {
   closeCommentPopup();
 });
+
+// add new comment form action
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  addNewComment();
+  form.reset();
+  
+})

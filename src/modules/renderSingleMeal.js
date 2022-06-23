@@ -1,5 +1,6 @@
 const renderSingleMeal = (mealObj) => {
   const mealName = document.querySelector('#meal-name');
+  const mealItem = document.querySelector('.meal-details');
   const mealCat = document.querySelector('#meal-cat');
   const mealArea = document.querySelector('#meal-area');
   const mealImage = document.querySelector('#commentImg');
@@ -11,6 +12,7 @@ const renderSingleMeal = (mealObj) => {
   mealArea.innerHTML = `Area: ${mealObj.strArea}`;
   mealImage.setAttribute('src', mealObj.strMealThumb);
   mealVideo.setAttribute('src', vidUrl);
+  mealItem.setAttribute('id', mealObj.idMeal)
 };
 
 export default renderSingleMeal;
