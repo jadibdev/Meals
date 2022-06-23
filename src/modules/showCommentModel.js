@@ -1,4 +1,4 @@
-import fetchComments from "./fetchComments.js";
+import fetchComments from './fetchComments.js';
 
 const openCommentModel = (id) => {
   const mainContainer = document.querySelector('.container');

@@ -9,8 +9,8 @@ const addNewComment = () => {
   const commentData = {
     item_id: mealItem.id,
     username: userName.value,
-    comment: userComment.value
-  }
+    comment: userComment.value,
+  };
 
   fetch(url, {
     method: 'POST',
@@ -19,13 +19,9 @@ const addNewComment = () => {
     },
     body: JSON.stringify(commentData),
   })
-    .then(response => response.json())
-    .then(comment => {
-      return comment;
-    })
-    .catch(error => {
-      return error;
-    });
-}
+    .then((response) => response.json())
+    .then((comment) => comment)
+    .catch(error => error);
+};
 
 export default addNewComment;

@@ -77,7 +77,6 @@ const getMeals = async (category) => {
   document.querySelectorAll('.fa-heart').forEach((item) => {
     item.addEventListener('click', () => {
       postLike(item.id).then((data) => {
-        console.log('data from server: ', data);
       });
 
       getLikes(item.id).then((result) => {

@@ -113,12 +113,9 @@ body {
 }
 
 .commentBtn:hover {
-  transform: scale(1.1);
-}
-
-.commentBtn:hover {
   color: #fff;
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .footer {

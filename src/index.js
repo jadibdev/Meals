@@ -1,6 +1,6 @@
 import './style.css';
 import addNewComment from './modules/addNewcomment.js';
-import showNotification from './modules/showNotification.js'
+import showNotification from './modules/showNotification.js';
 import renderFooter from './modules/footer.js';
 import getMeals from './modules/getMeals.js';
 import addActiveClass from './modules/addActiveClass.js';
