@@ -47,11 +47,9 @@ async function getLikes(itemId) {
 }
 
 const calculateItemCounter = () => {
-  let itemCounter = Math.floor(Math.random() * 25);
+  const itemCounter = Math.floor(Math.random() * 25);
   return itemCounter;
 };
-
-console.log('item counter', calculateItemCounter());
 
 const getMeals = async (category) => {
   for (let i = 0; i < 6; i += 1) {
