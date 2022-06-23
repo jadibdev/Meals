@@ -5,7 +5,8 @@ import addActiveClass from './modules/addActiveClass.js';
 import openCommentModel from './modules/showCommentModel.js';
 import closeCommentPopup from './modules/closeCommentModel.js';
 import fetchSingleMeal from './modules/fetchSingleMeal.js';
-import addNewComment from './addNewcomment.js';
+import addNewComment from './modules/addNewcomment.js';
+import showNotification from './modules/showNotification.js';
 
 const navMenu = document.querySelector('.nav-menu');
 const mealsList = document.querySelector('#content');
@@ -27,7 +28,7 @@ mealsList.addEventListener('click', (event) => {
   const id = parseInt(event.target.id, 10);
   if (event.target.className === 'commentBtn') {
     fetchSingleMeal(id);
-    openCommentModel();
+    openCommentModel(id);
   }
 });
 
@@ -41,5 +42,5 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   addNewComment();
   form.reset();
-  
+  showNotification();
 })

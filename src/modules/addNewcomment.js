@@ -5,9 +5,9 @@ const addNewComment = () => {
   const userComment = form.elements.comment;
 
   const InvolvementApiKey = 'H1778Eipl0PRUFSJ8DNo';
-  const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${InvolvementApiKey}/comments`
+  const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${InvolvementApiKey}/comments`;
   const commentData = {
-    item_id: mealItem,
+    item_id: mealItem.id,
     username: userName.value,
     comment: userComment.value
   }
