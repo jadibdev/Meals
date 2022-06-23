@@ -1,21 +1,22 @@
 import './style.css';
+import addNewComment from './modules/addNewcomment.js';
+import showNotification from './modules/showNotification.js';
 import renderFooter from './modules/footer.js';
 import getMeals from './modules/getMeals.js';
 import addActiveClass from './modules/addActiveClass.js';
 import openCommentModel from './modules/showCommentModel.js';
 import closeCommentPopup from './modules/closeCommentModel.js';
-import getPopupMedia from './modules/getPopupMedia.js';
+import fetchSingleMeal from './modules/fetchSingleMeal.js';
 
 getMeals('Breakfast');
 
 const navMenu = document.querySelector('.nav-menu');
-const mealsList = document.querySelector('#content');
+const mealsList = document.querySelector('.meals-list');
 const closeCommentModel = document.querySelector('.close');
+const form = document.querySelector('.form');
 
 navMenu.addEventListener('click', (event) => {
-  // const category = event.target.innerHTML;
   addActiveClass(event.target);
-  // getMeals(category);
 });
 
 document.getElementById('Breakfast').addEventListener('click', () => {
@@ -47,14 +48,22 @@ renderFooter();
 
 // handle show comment pop-up model
 mealsList.addEventListener('click', (event) => {
+  const id = parseInt(event.target.id, 10);
   if (event.target.className === 'commentBtn') {
-    console.log(event.target.id);
-    getPopupMedia(event.target.id);
-    openCommentModel();
+    fetchSingleMeal(id);
+    openCommentModel(id);
   }
 });
 
 // close comment pop-up model
 closeCommentModel.addEventListener('click', () => {
   closeCommentPopup();
+});
+
+// add new comment form action
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  addNewComment();
+  form.reset();
+  showNotification();
 });
