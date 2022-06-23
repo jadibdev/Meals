@@ -65,7 +65,7 @@ const getMeals = async (category) => {
           <p id='p${data.meals[i].strMeal}' class="counter"></p>
         </div>
       </div>
-      <button class="commentBtn">Comments</button>
+      <button class="commentBtn" id='${data.meals[i].idMeal}'>Comments</button>
     </li>`;
     ul.insertAdjacentHTML('beforeend', mealTemplate);
     getLikes(`${data.meals[i].strMeal}`).then((result) => {

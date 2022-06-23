@@ -1,23 +1,22 @@
 import './style.css';
-import addNewComment from './modules/addNewcomment.js'
+import addNewComment from './modules/addNewcomment.js';
 import showNotification from './modules/showNotification.js'
 import renderFooter from './modules/footer.js';
 import getMeals from './modules/getMeals.js';
 import addActiveClass from './modules/addActiveClass.js';
 import openCommentModel from './modules/showCommentModel.js';
 import closeCommentPopup from './modules/closeCommentModel.js';
+import fetchSingleMeal from './modules/fetchSingleMeal.js';
 
 getMeals('Breakfast');
 
 const navMenu = document.querySelector('.nav-menu');
-const mealsList = document.querySelector('#content');
+const mealsList = document.querySelector('.meals-list');
 const closeCommentModel = document.querySelector('.close');
 const form = document.querySelector('.form');
 
 navMenu.addEventListener('click', (event) => {
-  // const category = event.target.innerHTML;
   addActiveClass(event.target);
-  // getMeals(category);
 });
 
 document.getElementById('breakfast').addEventListener('click', () => {
@@ -49,9 +48,9 @@ renderFooter();
 
 // handle show comment pop-up model
 mealsList.addEventListener('click', (event) => {
-  const id = event.target.id;
-  console.log(id)
+  const id = parseInt(event.target.id, 10);
   if (event.target.className === 'commentBtn') {
+    fetchSingleMeal(id);
     openCommentModel(id);
   }
 });
@@ -67,4 +66,4 @@ form.addEventListener('submit', (event) => {
   addNewComment();
   form.reset();
   showNotification();
-})
+});
