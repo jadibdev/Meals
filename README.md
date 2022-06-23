@@ -3,6 +3,9 @@ A JavaScript Project Meals King App: A web app that display meals categories, ca
 Meals data is fetched from MealDB API
 Likes and comments are stored in the Involvement API provided by Microverse.
 
+### Live link
+[Meal App](https://jadibdev.github.io/Meals/dist/index.html/)
+
 ## Built With
 - Webpack
 - Loadash
