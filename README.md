@@ -4,7 +4,7 @@ Meals data is fetched from MealDB API
 Likes and comments are stored in the Involvement API provided by Microverse.
 
 ### Live link
-[Meal App](https://jadibdev.github.io/Meals/dist/index.html/)
+[Meal App](https://jadibdev.github.io/Meals/dist/index.html)/)
 
 ## Built With
 - Webpack
