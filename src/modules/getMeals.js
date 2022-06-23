@@ -53,7 +53,7 @@ async function getLikes(itemId) {
 
 const calculateCounter = (id, length) => {
   document.getElementById(`${id}`).innerText = `${id} (${length})`;
-}
+};
 
 const getMeals = async (category) => {
   const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`);
@@ -82,7 +82,7 @@ const getMeals = async (category) => {
   // event listener to post a like
   document.querySelectorAll('.fa-heart').forEach((item) => {
     item.addEventListener('click', () => {
-      postLike(item.id).then((data) => {
+      postLike(item.id).then(() => {
       });
 
       getLikes(item.id).then((result) => {
