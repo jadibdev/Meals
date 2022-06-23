@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved
 import renderMealsItem from './renderData.js';
 
 const fetchData = async (category) => {
