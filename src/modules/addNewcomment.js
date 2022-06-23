@@ -27,7 +27,7 @@ const addNewComment = () => {
   })
     .then((response) => response.json())
     .then((comment) => comment)
-    .catch(error => error);
+    .catch((error) => error);
 };
 
 export default addNewComment;

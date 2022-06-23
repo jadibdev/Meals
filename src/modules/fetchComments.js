@@ -1,7 +1,6 @@
 import renderComment from './renderComment.js';
 import updateCommentCounter from './updateCommentCounter.js';
 import empty from './emptyElement.js';
-import { remove } from 'lodash';
 
 const fetchComments = async (id) => {
   const ul = document.createElement('ul');
@@ -16,7 +15,7 @@ const fetchComments = async (id) => {
     renderComment(commentData);
     updateCommentCounter(commentData);
   } else {
-    const currentUl = document.querySelector('.commentList')
+    const currentUl = document.querySelector('.commentList');
     empty(currentUl);
     const commentDiv = document.querySelector('.comment-list');
     const commentCounter = document.querySelector('#comment-counter');
