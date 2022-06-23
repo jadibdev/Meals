@@ -1,14 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Germania+One&family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Meals</title>
+  <script defer src="main.js"></script></head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wbpack Exercise</title>
-<script defer src="main.js"></script></head>
-
-<body>
-  <h1>Hello SF!!!!</h1>
-</body>
-
+  <body>
+    <div class="container">
+      <header class="header">
+        <img
+          src="https://i.postimg.cc/dQTp9Ybv/brand-logo.png"
+          alt="meal-king-logo"
+          class="brand-logo"
+        />
+        <nav class="nav">
+          <ul id="navLink" class="nav-menu">
+            <li class="nav-item active" id="Breakfast">Breakfast</li>
+            <li class="nav-item" id="Seafood">Seafood</li>
+            <li class="nav-item" id="Pasta">Pasta</li>
+            <li class="nav-item" id="Dessert">Dessert</li>
+            <li class="nav-item" id="Chicken">Chicken</li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <div id="content"></div>
+      </main>
+    </div>
+    <!-- comment pop-up model -->
+    <div class="comment-model">
+      <div class="comment-section">
+        <p><i class="close fa fa-close"></i></p>
+        <div class="vidImg">
+          <img
+            id="commentImg"
+            src="https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg"
+            alt="meal item"
+          />
+          <iframe
+            id="meals-video"
+            width="420"
+            height="315"
+            
+          >
+          </iframe>
+        </div>
+        <div class="meal-details">
+          <h3 id="meal-name"></h3>
+          <h3 id="meal-cat"></h3>
+          <h3 id="meal-area"></h3>
+        </div>
+        <div class="comment-box">
+          <div class="comment-details">
+            <h3 class="section-title">Comment (<span id="comment-counter"></span>)</h3>
+            <div class="comment-list">
+            </div>
+          </div>
+          <div class="add-comment">
+            <h2 class="section-title">Add Comment</h2>
+            <form action="#" class="form">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your name"
+              />
+              <textarea
+                name="comment"
+                id="comment"
+                cols="40"
+                rows="10"
+                placeholder="Your insights"
+              ></textarea>
+              <button class="commentBtn" type="submit" id="submit">
+                Comment
+              </button>
+            </form>
+            <p class="notification"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
