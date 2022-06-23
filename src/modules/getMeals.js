@@ -46,6 +46,11 @@ async function getLikes(itemId) {
   // return data;
 }
 
+const calculateItemCounter = () => {
+  const itemCounter = Math.floor(Math.random() * 25);
+  return itemCounter;
+};
+
 const getMeals = async (category) => {
   for (let i = 0; i < 6; i += 1) {
     const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`);
@@ -54,7 +59,7 @@ const getMeals = async (category) => {
     <li>   
       <img class="meal-images" src=${data.meals[i].strMealThumb} alt="meal pic" />
       <div class="title-and-icons">
-        <h5>${data.meals[i].strMeal}</h5>
+        <h5>${data.meals[i].strMeal}: (${calculateItemCounter()})</h5>
         <div id="like-container">
           <i id='${data.meals[i].strMeal}' class='fa fa-heart'></i>
           <p id='p${data.meals[i].strMeal}' class="counter"></p>
