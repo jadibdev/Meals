@@ -19,27 +19,27 @@ navMenu.addEventListener('click', (event) => {
   addActiveClass(event.target);
 });
 
-document.getElementById('breakfast').addEventListener('click', () => {
+document.getElementById('Breakfast').addEventListener('click', () => {
   document.getElementById('classlist').innerHTML = '';
   getMeals('Breakfast');
 });
 
-document.getElementById('seafood').addEventListener('click', () => {
+document.getElementById('Seafood').addEventListener('click', () => {
   document.getElementById('classlist').innerHTML = '';
   getMeals('Seafood');
 });
 
-document.getElementById('pasta').addEventListener('click', () => {
+document.getElementById('Pasta').addEventListener('click', () => {
   document.getElementById('classlist').innerHTML = '';
   getMeals('Pasta');
 });
 
-document.getElementById('dessert').addEventListener('click', () => {
+document.getElementById('Dessert').addEventListener('click', () => {
   document.getElementById('classlist').innerHTML = '';
   getMeals('Dessert');
 });
 
-document.getElementById('chicken').addEventListener('click', () => {
+document.getElementById('Chicken').addEventListener('click', () => {
   document.getElementById('classlist').innerHTML = '';
   getMeals('Chicken');
 });
