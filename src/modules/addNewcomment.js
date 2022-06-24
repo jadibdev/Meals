@@ -6,7 +6,7 @@ const addNewComment = () => {
   const currentCommentList = document.querySelector('.commentList');
   const commentCount = document.querySelector('#comment-counter');
   const li = document.createElement('li');
-  li.innerHTML = userComment.value;
+  li.innerHTML = `${userName.value}: ${userComment.value}`;
   currentCommentList.appendChild(li);
   commentCount.innerHTML = currentCommentList.childElementCount;
 

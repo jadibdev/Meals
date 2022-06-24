@@ -59,9 +59,7 @@ const getMeals = async (category) => {
   const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`);
   const data = await response.json();
   for (let i = 0; i < data.meals.length; i += 1) {
-    // document.getElementById(`${category}`).innerText = `${category} (${data.meals.length})`;
     calculateCounter(category, data.meals.length);
-    console.log(data);
     const mealTemplate = `
     <li>   
       <img class="meal-images" src=${data.meals[i].strMealThumb} alt="meal pic" />

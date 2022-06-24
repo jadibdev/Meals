@@ -4,7 +4,7 @@ const renderComment = (commentArr) => {
   ul.setAttribute('class', 'commentList');
   commentArr.forEach((element) => {
     const li = document.createElement('li');
-    li.innerHTML = element.comment;
+    li.innerHTML = `${element.username}: ${element.comment}`;
 
     ul.append(li);
   });
