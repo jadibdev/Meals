@@ -1,0 +1,17 @@
+// Primary font 
+<link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Poppins:wght@200&display=swap" rel="stylesheet">
+font-family: 'Germania One', cursive;
+font-family: 'Poppins', sans-serif;
+
+// Color
+Primary color: ff4020
+Secondary color: 000000
+
+// Brand logo
+https://i.postimg.cc/dQTp9Ybv/brand-logo.png
+
+// icons
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<i class='far fa-heart'></i>
+more icons: https://www.w3schools.com/icons/icons_reference.asp
+
